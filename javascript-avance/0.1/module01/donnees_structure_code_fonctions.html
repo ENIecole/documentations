@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Données, structure de code et fonctions :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="0.1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <a class="nav-link" href="../index.html">Javascript avancé</a>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">0.1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">0.1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li>Module 01</li>
+    <li><a href="donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/caliendojulien/eni-javascript-avance/edit/main/documentations/modules/ROOT/pages/module01/donnees_structure_code_fonctions.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Données, structure de code et fonctions</h1>
+<div class="sect1">
+<h2 id="_objectifs"><a class="anchor" href="#_objectifs"></a>Objectifs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Très rapide.
+C&#8217;est un simple rappel sur les types de données, les structures de code et les fonctions.</p>
+</div>
+<div class="paragraph">
+<p>Aucune notion de DOM pour l&#8217;instant. On exécute un fichier javascript dans le terminal intégré à WebStorm.</p>
+</div>
+<div class="paragraph">
+<p>Le thème de Star Wars est utilisé pour essayer d&#8217;attirer l&#8217;attention sur une démonstration qui peut sembler inutile pour les apprenants.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mise_en_place"><a class="anchor" href="#_mise_en_place"></a>Mise en place</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ouvrir Webstorm</p>
+</li>
+<li>
+<p>Créer un nouveau document javascript : clic droit &#8658;New &#8658;JavaScript file</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_type_de_données"><a class="anchor" href="#_type_de_données"></a>Type de données</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>On va faire la démonstration de ce qui a été dit pendant le powerpoint, avec des données extrêmment simple.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Deux chaines de caractères</p>
+</li>
+<li>
+<p>Un objet</p>
+</li>
+<li>
+<p>Un tableau</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">console.group("Type de données : ");
+// Déclarations :
+let jedi = "Obi-Wan Kenobi";
+let sith = "Anakin Skywalker";
+let aujourdhui = new Date();
+let planetes = ["Tatooïne", "Dagobah", "Naboo", "Aldérande"];
+// Vérifications des types de données :
+console.log(typeof jedi);
+console.log(typeof sith);
+console.dir(aujourdhui);
+console.table(planetes);
+console.groupEnd();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>On en profite pour introduire <em>console.dir()</em> et <em>console.table()</em> pour que la démonstration ne soit pas ennuyante.</p>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Expliquer <em>typeof</em> qui prendra tout son sens dans le module 02 lorsque l&#8217;on fera de l&#8217;objet.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_structure_de_code"><a class="anchor" href="#_structure_de_code"></a>Structure de code</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Une boucle for..of va permettre de faire une boucle sur le tableau de planètes.</p>
+</li>
+<li>
+<p>Une condition permet de faire passer Anakin du côté obscur de la force.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Plus précisément, si la date du jour est paire, rien ne bouge. Sinon, il change de nom.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">console.group("Structures de code : ");
+console.log("Les planètes avec une boucle for..of : ");
+for (const planete of planetes) {
+    console.dir(planete);
+}
+console.log("Une condition :")
+if (aujourdhui.getDay() % 2) {
+    sith = "Dark Vador";
+}
+console.dir(sith);
+console.groupEnd();</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_fonctions"><a class="anchor" href="#_fonctions"></a>Fonctions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Ici, on va utiliser une fonction pour aller récupérer dans un tableau un élément bien précis passé en paramètre.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">/**
+ * Permet de retrouver un principe du code jedi
+ * par son index
+ *
+ * @param index
+ * @returns {string}
+ */
+function code_jedi(index) {
+    const principes = [
+        "Il n'y a pas d'émotion, il y a la paix",
+        "Il n'y a pas d'ignorance, il y a la connaissance",
+        "Il n'y a pas de passion, il y a la sérénité",
+        "Il n'y a pas de chaos, il y a l'harmonie",
+        "Il n'y a pas la mort, il y a la Force"
+    ]
+    return principes[index];
+}
+console.log(code_jedi(1));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Insister sur les bonnes pratiques de développement :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;indentation</p>
+</li>
+<li>
+<p>Les commentaires au-dessus de la fonction</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+C&#8217;est le bon moment pour parler de la portée des variables.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

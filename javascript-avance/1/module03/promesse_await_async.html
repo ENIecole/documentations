@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Promesse, await et async :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/webpack.html">Webpack</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/vite.html">ViteJs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/jest_cypress.html">JEST</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/joo_simple.html">Javascript orienté objet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctions.html">Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/prototypes.html">Prototypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/classes_es6.html">Classes ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctionnalites_es6.html">Fonctionnalités ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/babel.html">Babel</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="web_curl_webstorm.html">Navigateur, Curl et WebStorm</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="swagger.html">Swagger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="promesse_await_async.html">Promesse, await et async</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/installation_typescript.html">Installation de TypeScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/variables_enumeres.html">Variables et énumérés</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/classes.html">Classes Typescript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/generiques.html">Les génériques</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/creation_du_projet.html">Angular - création du projet de SuperHeros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_composant.html">Angular - Super composants</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_liaisons.html">Angular - Liaisons composants-templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_directives.html">Angular - Super directives</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_routage.html">Angular - Super routage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_services.html">Angular - Super service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_api.html">Angular - Super API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TPs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module01/devinette.html">Devinette</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/quiz.html">Quiz</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/enigma.html">Enigma</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module03/iss.html">ISS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module04/vente_aux_encheres.html">Vente aux enchères</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_maquette.html">Pokemon - Maquette</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_attrapez_les_tous.html">Pokemon - Attrapez les tous</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_service.html">Pokemon - Service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_api.html">Pokemon - API</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li>Module 03</li>
+    <li><a href="promesse_await_async.html">Promesse, await et async</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module03/promesse_await_async.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Promesse, await et async</h1>
+<div class="sect1">
+<h2 id="_objectifs"><a class="anchor" href="#_objectifs"></a>Objectifs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;objectif de cette démonstration est l&#8217;utilisation des promesses et des mots clés async et await.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Lancer le script javascript en mode debug pour avoir le bon affichage des émojis dans la console.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_chainage"><a class="anchor" href="#_chainage"></a>Chainage</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Un des grands intérêts des promesses est le fait de pouvoir la chainer.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+    .then(r =&gt; r.json())
+    .then(reponse =&gt; {
+        // console.log(reponse["sprites"]["other"]["home"]["front_female"]);
+        let image = document.createElement('img');
+        image.src = reponse["sprites"]["other"]["home"]["front_female"];
+        document.getElementById('pikachu').appendChild(image);
+    })</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ici,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>fetch() retourne une promesse à la ligne 1</p>
+</li>
+<li>
+<p>r.json() retourne une promesse à la ligne 2</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Et les deux sont "chaînées".</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_erreurs"><a class="anchor" href="#_erreurs"></a>Erreurs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>N&#8217;importe quelle erreur dans la chaine de promesse peut être récupérée grâce à catch()</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">fetch('')
+.catch (erreur =&gt; console.log(erreur));</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Intercepter une erreur entraîne l&#8217;arrêt immédiat de toute la chaîne de promesses.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_créer_une_méthode_asynchrone"><a class="anchor" href="#_créer_une_méthode_asynchrone"></a>Créer une méthode asynchrone</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Si on imagine une fonction qui incrémente un indice jusqu&#8217;à un très grand nombre, celle-ci prendra du temps à s&#8217;exécuter.</p>
+</div>
+<div class="paragraph">
+<p>De plus, elle bloque le déroulé du programme puisque l&#8217;instruction suivante attend que la précédente soit terminée.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">console.group('synchrone');
+
+function synchrone() {
+    let i = 0;
+    while (i &lt; 1000000000) {
+        i++;
+    }
+}
+
+console.time('ensemble');
+console.time('avant');
+console.log('avant');
+console.timeEnd('avant');
+console.time('synchrone');
+synchrone();
+console.log('synchrone')
+console.timeEnd('synchrone');
+console.time('apres');
+console.log('apres');
+console.timeEnd('apres');
+console.timeEnd('ensemble');
+console.groupEnd();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Lorsque les instructions situées après la méthode n&#8217;ont pas besoin qu&#8217;elle soit terminée, c&#8217;est une bonne occasion de la rendre asynchrone grâce aux promesses.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">console.group('promesse');
+
+function promesse() {
+    return Promise.resolve()
+        .then(
+            t =&gt; {
+                let i = 0;
+                while (i &lt; 1000000000) {
+                    i++;
+                }
+                return ('Promesse');
+            }
+        );
+
+}
+
+console.time('ensemble');
+console.time('avant');
+console.log('avant');
+console.timeEnd('avant');
+console.time('promesse');
+promesse().then((retour) =&gt; console.log(retour));
+console.timeEnd('promesse');
+console.time('apres');
+console.log('apres');
+console.timeEnd('apres');
+console.timeEnd('ensemble');
+console.groupEnd();</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Les promesses peuvent être difficiles à suivre et à lire.
+Async et Await sont du sucre syntaxique permettant de clarifier l&#8217;utilisation des promesses.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_async_await"><a class="anchor" href="#_async_await"></a>Async / await</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_async"><a class="anchor" href="#_async"></a>Async</h3>
+<div class="paragraph">
+<p>async permet de simplifier l&#8217;écriture d&#8217;une méthode asynchrone passant de ça :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const getAnimal = (nom) =&gt; {
+    const animaux = {
+        'singe': '🐵',
+        'chien': '🐶',
+        'loup': '🐺',
+        'renard': '🦊',
+        'licorne': '🦄',
+        'lapin': '🐰'
+    }
+    return Promise.resolve(animaux[nom]);
+}
+getAnimal('licorne').then(console.log);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>a ca :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const getAnimalAsync = async (nom) =&gt; {
+    const animaux = {
+        'singe': '🐵',
+        'chien': '🐶',
+        'loup': '🐺',
+        'renard': '🦊',
+        'licorne': '🦄',
+        'lapin': '🐰'
+    }
+    return animaux[nom];
+}
+getAnimalAsync('licorne').then(console.log);</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Les deux méthodes retournent exactement le même résultat.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_await"><a class="anchor" href="#_await"></a>Await</h3>
+<div class="paragraph">
+<p>A l&#8217;inverse, await permet d&#8217;attendre le retour d&#8217;un appel asynchrone avant de passer a l&#8217;instruction suivante.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const zoo1 = async () =&gt; {
+    const lapin = await getAnimal('lapin');
+    const loup = await getAnimal('loup');
+    return [lapin, loup]
+}
+zoo1().then(console.log)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ici, une énorme erreur est commise.
+Mais c&#8217;est pédagogique.
+C&#8217;est le cas typique d&#8217;un await mal utilisé.</p>
+</div>
+<div class="paragraph">
+<p>Le deuxième appel asynchrone n&#8217;est effectué qu&#8217;après le premier.
+Pourtant, il aurait été préférable de lancer les deux appels en même temps et d&#8217;attendre le retour des deux dans le <em>return</em>.</p>
+</div>
+<div class="paragraph">
+<p>Comme ici :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const zoo2 = async () =&gt; {
+    const lapin = getAnimal('lapin');
+    const loup = getAnimal('loup');
+    const enclos = await Promise.all([lapin, loup]);
+    return enclos;
+}
+zoo2().then(console.log)</code></pre>
+</div>
+</div>
+<div class="admonitionblock tip">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-tip" title="Tip"></i>
+</td>
+<td class="content">
+Rappeler que l&#8217;important, quand on travaille en asynchrone, c&#8217;est de ne pas bloquer l&#8217;exécution du programme si ce n&#8217;est pas nécessaire.
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

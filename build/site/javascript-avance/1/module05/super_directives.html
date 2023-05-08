@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Angular - Super directives :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/webpack.html">Webpack</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/vite.html">ViteJs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/jest_cypress.html">JEST</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/joo_simple.html">Javascript orienté objet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctions.html">Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/prototypes.html">Prototypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/classes_es6.html">Classes ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctionnalites_es6.html">Fonctionnalités ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/babel.html">Babel</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/web_curl_webstorm.html">Navigateur, Curl et WebStorm</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/swagger.html">Swagger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/promesse_await_async.html">Promesse, await et async</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/installation_typescript.html">Installation de TypeScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/variables_enumeres.html">Variables et énumérés</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/classes.html">Classes Typescript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/generiques.html">Les génériques</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="creation_du_projet.html">Angular - création du projet de SuperHeros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="super_composant.html">Angular - Super composants</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="super_liaisons.html">Angular - Liaisons composants-templates</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="super_directives.html">Angular - Super directives</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="super_routage.html">Angular - Super routage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="super_services.html">Angular - Super service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="super_api.html">Angular - Super API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TPs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module01/devinette.html">Devinette</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/quiz.html">Quiz</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/enigma.html">Enigma</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module03/iss.html">ISS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module04/vente_aux_encheres.html">Vente aux enchères</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_maquette.html">Pokemon - Maquette</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_attrapez_les_tous.html">Pokemon - Attrapez les tous</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_service.html">Pokemon - Service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_api.html">Pokemon - API</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li>Module 05</li>
+    <li><a href="super_directives.html">Angular - Super directives</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module05/super_directives.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Angular - Super directives</h1>
+<div class="sect1">
+<h2 id="_objectif"><a class="anchor" href="#_objectif"></a>Objectif</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;objectif de cette démonstration est la présentation des directives *ngFor et *ngIf.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mise_en_place"><a class="anchor" href="#_mise_en_place"></a>Mise en place</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cette démonstration démarre ou la précédente s&#8217;arrête.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_problèmes"><a class="anchor" href="#_problèmes"></a>Problèmes</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Faire constater aux étudiants que l&#8217;affichage du tableau vide n&#8217;est pas utile</p>
+</li>
+<li>
+<p>Faire constater aux étudiants que l&#8217;interpolation d&#8217;un tableau sans le filtre <em>json</em> n&#8217;affiche rien</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_template"><a class="anchor" href="#_template"></a>Template</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Modifier le fichier <em>tous-les-super-heros.component.html</em> pour y effectuer un *ngFor</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div&gt;
+  &lt;button (click)="ajoutSupers()"&gt;Chargement&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;div class="supers"&gt;
+  &lt;a *ngFor="let chaque_super of supers"&gt;
+    &lt;img [src]="chaque_super.images.sm"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_typescript"><a class="anchor" href="#_typescript"></a>Typescript</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Modifier le fichier <em>tous-les-super-heros.component.ts</em> pour ajouter une image aux super héros</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">  public ajoutSupers() {
+    this.supers.push({
+      nom: 'Wonder Woman',
+      images: {sm: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/720-wonder-woman.jpg'}
+    });
+    this.supers.push({
+      nom: 'Hulk',
+      images: {sm: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/332-hulk.jpg'}
+    });
+    this.supers.push({
+      nom: 'Harley Quinn',
+      images: {sm: 'https://cdn.jsdelivr.net/gh/akabab/superhero-api@0.3.0/api/images/sm/309-harley-quinn.jpg'}
+    });
+  }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_css"><a class="anchor" href="#_css"></a>CSS</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Modifier le fichier de style <em>tous-les-super-heros.scss</em></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-scss hljs" data-lang="scss">div {
+  @apply flex justify-center;
+}
+
+button {
+  @apply m-2 p-4 bg-blue-500 hover:bg-blue-600 text-white text-sm font-medium rounded-md flex justify-center;
+}
+
+.supers {
+  @apply flex flex-wrap gap-1 justify-center;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_résultat"><a class="anchor" href="#_résultat"></a>Résultat</h2>
+<div class="sectionbody">
+<div class="imageblock">
+<div class="content">
+<img src="../_images/module05/super_directives/maquette.png" alt="maquette">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_interface"><a class="anchor" href="#_interface"></a>Interface</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Pour peaufiner un peu, créer une interface <em>Super</em> dans un dossier <em>src/app/modeles/</em></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">export class Super {
+  private readonly _nom: string;
+  private readonly _image: string;
+
+  constructor(nom: string, image: string) {
+    this._nom = nom;
+    this._image = image;
+  }
+
+  get nom(): string {
+    return this._nom;
+  }
+
+  get image(): string {
+    return this._image;
+  }
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modifier le fichier TypeScript <em>tous-les-super-heros.component.ts</em></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-typescript hljs" data-lang="typescript">public supers: Array&lt;Super&gt;;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Modifier le fichier html <em>tous-les-super-heros.component.html</em></p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div class="supers"&gt;
+  &lt;a *ngFor="let chaque_super of supers"&gt;
+    &lt;img [src]="chaque_super.image"&gt;
+  &lt;/a&gt;
+&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Vérifier que le résultat est toujours le même en utilisant des objets <strong>Super</strong> plutôt qu'<strong>any</strong></p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

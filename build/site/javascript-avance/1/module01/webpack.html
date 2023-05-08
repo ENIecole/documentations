@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Webpack :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="webpack.html">Webpack</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="vite.html">ViteJs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="jest_cypress.html">JEST</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/joo_simple.html">Javascript orienté objet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctions.html">Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/prototypes.html">Prototypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/classes_es6.html">Classes ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctionnalites_es6.html">Fonctionnalités ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/babel.html">Babel</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/web_curl_webstorm.html">Navigateur, Curl et WebStorm</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/swagger.html">Swagger</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module03/promesse_await_async.html">Promesse, await et async</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/installation_typescript.html">Installation de TypeScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/variables_enumeres.html">Variables et énumérés</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/classes.html">Classes Typescript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/generiques.html">Les génériques</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/creation_du_projet.html">Angular - création du projet de SuperHeros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_composant.html">Angular - Super composants</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_liaisons.html">Angular - Liaisons composants-templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_directives.html">Angular - Super directives</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_routage.html">Angular - Super routage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_services.html">Angular - Super service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_api.html">Angular - Super API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TPs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module01/devinette.html">Devinette</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/quiz.html">Quiz</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/enigma.html">Enigma</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module03/iss.html">ISS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module04/vente_aux_encheres.html">Vente aux enchères</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_maquette.html">Pokemon - Maquette</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_attrapez_les_tous.html">Pokemon - Attrapez les tous</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_service.html">Pokemon - Service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_api.html">Pokemon - API</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li>Module 01</li>
+    <li><a href="webpack.html">Webpack</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module01/webpack.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Webpack</h1>
+<div class="sect1">
+<h2 id="_objectifs"><a class="anchor" href="#_objectifs"></a>Objectifs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;objectif de cette démonstration est la mise en place d&#8217;un projet HTML/Javascript simple en utilisant npm et Webpack.</p>
+</div>
+<div class="paragraph">
+<p>Webpack est la petite nouveauté par rapport à ce qu&#8217;ils connaissent déjà.
+Pour illustrer l&#8217;intérêt de celui-ci, on va installer le framework scss <a href="https://tailwindcss.com/">tailwind</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mise_en_place"><a class="anchor" href="#_mise_en_place"></a>Mise en place</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Ouvrir Webstorm</p>
+</li>
+<li>
+<p>Vérifier que nodejs est installé</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">node -v</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>À l&#8217;intérieur d&#8217;un nouveau dossier, initialiser un projet javascript</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npm init -y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Cette commande va créer un fichier package.json</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Créer un nouveau document javascript : clic droit &#8658;New &#8658;JavaScript file</p>
+</li>
+<li>
+<p>Ainsi qu&#8217;un nouveau document html : clic droit &#8658;New &#8658;HTML file</p>
+</li>
+</ul>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+le lien entre le javascript et le html sera fait par Webpack
+</td>
+</tr>
+</table>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_webpack"><a class="anchor" href="#_webpack"></a>Webpack</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_installation"><a class="anchor" href="#_installation"></a>Installation</h3>
+<div class="paragraph">
+<p>Grâce à NPM, tout se fait en ligne de commande.</p>
+</div>
+<div class="paragraph">
+<p>À l&#8217;intérieur du dossier de notre projet de démonstration :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npm install webpack webpack-cli --save-dev</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+--save-dev permet de dire à webpack de ne pas incorporer ces deux paquets à notre projet final.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Le fichier <em>package.json</em> a dû s&#8217;enrichir de quelques lignes dans les dépendances :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">  "devDependencies": {
+    "webpack": "^5.78.0",
+    "webpack-cli": "^5.0.1"
+  }</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Et un dossier <em>node_modules</em> est maintenant présent dans l&#8217;architecture de notre projet.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_architecture"><a class="anchor" href="#_architecture"></a>Architecture</h3>
+<div class="paragraph">
+<p>Pour respecter les bonnes pratiques de webpack, créer un fichier index.js (le point d&#8217;entrée défini dans le fichier <em>package.json</em>), un dossier <em>dist</em> vide et un dossier <em>src</em> qui contient nos sources (index.html et script.js).</p>
+</div>
+<div class="paragraph">
+<p>À ce stade, l&#8217;architecture du projet est la suivante :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/module01/webpack/architecture.png" alt="architecture">
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_htmlwebpackplugin"><a class="anchor" href="#_htmlwebpackplugin"></a>HtmlWebpackPlugin</h3>
+<div class="paragraph">
+<p>Installer un plugin pour simplifier la création d&#8217;un HTML minifié dans le dossier <em>dist</em>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npm install --save-dev html-webpack-plugin</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Faire l&#8217;import de notre fichier script.js à l&#8217;intérieur du point d&#8217;entrés <em>index.js</em>.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">import './script.js';</code></pre>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_configuration"><a class="anchor" href="#_configuration"></a>Configuration</h3>
+<div class="paragraph">
+<p>Créer un fichier <em>webpack.config.js</em> qui contiendra toute la configuration de webpack.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Depuis Webpack 5, la création d&#8217;un fichier <em>webpack.config.js</em> est fortement recommandé
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+module.exports = {
+    entry: './src/index.js',
+    plugins: [
+        new HtmlWebpackPlugin(
+            {
+                template: './src/index.html'
+            }
+        )
+    ],
+    output: {
+        filename: '[name].bundle.js',
+        path: path.resolve(__dirname, 'dist'),
+        clean: true
+    }
+};</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ce fichier précise :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>qu&#8217;index.js est le point d&#8217;entrée,</p>
+</li>
+<li>
+<p>qu&#8217;on va utiliser le plugin HtmlWebpackPlugin</p>
+</li>
+<li>
+<p>que webpack devra générer :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>un fichier html à partir du fichier <em>index.html</em> du dossier <em>src</em></p>
+</li>
+<li>
+<p>un fichier javascript à partir du fichier <em>index.js</em> du dossier <em>src</em></p>
+</li>
+<li>
+<p>lier le javascript et le html qui ont été générés dans le dossier <em>dist</em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npx webpack          // Permet la génération des fichiers dans le dossier dist
+npw webpack --watch  // Utile en developpement (Hot reloading)</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_tailwind"><a class="anchor" href="#_tailwind"></a>Tailwind</h2>
+<div class="sectionbody">
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Cette étape est facultative.
+Elle permet de montrer comment installer un vrai framework scss dans un projet webpack.
+Bien entendu, n&#8217;importe quel framework css peut être utilisé avec un CDN.
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Installer Tailwind en tant que plugin webpack post-css</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npm install --save-dev tailwindcss postcss autoprefixer
+npx tailwindcss init</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Creer le fichier <em>postcss.config.js</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">module.exports = {
+    plugins: {
+        tailwindcss: {},
+        autoprefixer: {}
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Modifier le fichier <em>tailwind.config.js</em> pour lui indiquer où se trouve les fichiers html et javascript</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {}
+  },
+  plugins: []
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Créer un fichier css <em>style.css</em> dans notre projet en y ajoutant les directives de tailwind :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-css hljs" data-lang="css">@tailwind base;
+@tailwind components;
+@tailwind utilities;</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Ajouter le fichier <em>main.css</em> aux imports du point d&#8217;entrée de webpack <em>index.js</em>.</p>
+</div>
+<div class="paragraph">
+<p>Webpack a besoin de "loaders" pour pouvoir charger Tailwind.</p>
+</div>
+<div class="paragraph">
+<p>On les installe :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">npm install style-loader css-loader postcss-loader</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Et on ajoute les "loaders" en tant que module dans le fichier <em>webpack.config.js</em></p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-none hljs">module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        include: path.resolve(__dirname, 'src'),
+        use: ['style-loader', 'css-loader', 'postcss-loader']
+      }
+    ]
+  }</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_réalisation"><a class="anchor" href="#_réalisation"></a>Réalisation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Le fichier HTML commence par un titre H1.</p>
+</div>
+<div class="paragraph">
+<p>Sur le côté gauche, 3 inputs. Sur le côté droit, un cadre en couleur.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;objectif est de faire en sorte que les données inscritent dans les inputs se retrouvent dans le cadre de droite.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/module01/webpack/fiche_de_renseignement.png" alt="fiche de renseignement">
+</div>
+</div>
+<div class="sect2">
+<h3 id="_html"><a class="anchor" href="#_html"></a>HTML</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;!DOCTYPE html&gt;
+&lt;html lang="fr"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;M01D02&lt;/title&gt;
+    &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h1 id="titre" onclick="salut()"&gt;Fiche de renseignement&lt;/h1&gt;
+&lt;div class="flex flex-row container mx-auto"&gt;
+    &lt;div id="formulaire"&gt;
+        &lt;div class="w-1/3"&gt;
+            &lt;input type="search" placeholder="Nom Prénom" id="form_nom"&gt;
+            &lt;input type="search" placeholder="Métier" id="form_metier"&gt;
+            &lt;input type="search" placeholder="Description" id="form_description"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="carte"&gt;
+        &lt;i class="fa-solid fa-graduation-cap text-4xl text-blue-600"&gt;&lt;/i&gt;
+        &lt;h3 id="carte_nom"&gt;&lt;/h3&gt;
+        &lt;p id="carte_metier"&gt;
+        &lt;p id="carte_description"&gt;
+        &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+</div>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+Font awesome est intégré grâce à un CDN. Le "loader" de babel ne sera vu qu&#8217;au module 02.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_javascript"><a class="anchor" href="#_javascript"></a>Javascript</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">let form_nom = document.getElementById('form_nom');
+let form_metier = document.getElementById('form_metier');
+let form_description = document.getElementById('form_description');
+let carte_titre = document.getElementById('carte_nom');
+let carte_metier = document.getElementById('carte_metier');
+let carte_description = document.getElementById('carte_description');
+
+form_nom.addEventListener('input', () =&gt; carte_titre.innerText = form_nom.value);
+form_metier.addEventListener('input', () =&gt; carte_metier.innerText = form_metier.value);
+form_description.addEventListener('input', () =&gt; carte_description.innerText = form_description.value);</code></pre>
+</div>
+</div>
+<div class="admonitionblock note">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-note" title="Note"></i>
+</td>
+<td class="content">
+Utiliser uniquement les addEventListener() et pas les évènements en HTML.
+Pour qu&#8217;une fonction soit accessible avec des evenements de type onclick() alors elle doit etre dans le scope global de webpack.
+window.salut = function () {console.log('salut');, par exemple. Puis &lt;div onclick="salut()"&gt;&lt;/div&gt;
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_css"><a class="anchor" href="#_css"></a>CSS</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-scss hljs" data-lang="scss">@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input {
+    @apply m-2 w-full h-12 px-4 py-1 rounded-r-md border-gray-800 bg-gray-300 text-black focus:outline-none;
+}
+
+#formulaire {
+    @apply basis-2/3 flex justify-center;
+}
+
+#titre {
+    @apply text-4xl text-center m-4 p-4;
+}
+
+#carte {
+    @apply text-center basis-1/4 block rounded-xl border border-gray-800 bg-gray-900 p-4 shadow-xl sm:p-6 lg:p-8;
+}
+
+#carte_metier, #carte_description {
+    @apply mt-4 text-sm text-gray-300;
+}
+
+#carte_nom {
+    @apply mt-3 text-lg font-bold text-white sm:text-xl;
+}</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

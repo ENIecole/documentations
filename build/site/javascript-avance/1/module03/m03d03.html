@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Démonstration 03 du module 03 :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/webpack.html">Webpack</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/joo_simple.html">Javascript orienté objet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctions.html">Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/prototypes.html">Prototypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/classes_es6.html">Classes ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/babel.html">Babel</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li><a href="m03d03.html">Démonstration 03 du module 03</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/caliendojulien/eni-javascript-avance/edit/main/documentations/modules/ROOT/pages/module03/m03d03.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">Démonstration 03 du module 03</h1>
+<div id="toc" class="toc">
+<div id="toctitle">Table des matières</div>
+<ul class="sectlevel1">
+<li><a href="#_objectifs">Objectifs</a></li>
+<li><a href="#_mise_en_place">Mise en place</a></li>
+<li><a href="#_pokemons">Pokemons</a></li>
+<li><a href="#_spotify">Spotify</a>
+<ul class="sectlevel2">
+<li><a href="#_authorisations">Authorisations</a></li>
+<li><a href="#_recherche_dun_artiste">Recherche d&#8217;un artiste</a></li>
+<li><a href="#_audio">Audio</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_objectifs"><a class="anchor" href="#_objectifs"></a>Objectifs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;objectif de cette démonstration est l&#8217;utilisation de fetch pour effectuer une requete sur une api.</p>
+</div>
+<div class="paragraph">
+<p>On utilisera l&#8217;api de <a href="https://developer.spotify.com/documentation/web-api">Spotify</a> et de <a href="https://pokeapi.co/">Pokemon</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mise_en_place"><a class="anchor" href="#_mise_en_place"></a>Mise en place</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Créer un fichier html</p>
+</li>
+<li>
+<p>Créer un fichier script.js</p>
+</li>
+<li>
+<p>Lier le html et le javascript</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Le fichier HTML contient 3 emplacements :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Une div pour afficher l&#8217;image d&#8217;un pokemon</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/index.html[]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un champ de saisie pour rechercher un artiste dans la librairie Spotify</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/index.html[]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Une div qui contiendra le resultat de la recherche</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/index.html[]</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pokemons"><a class="anchor" href="#_pokemons"></a>Pokemons</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Utiliser curl ou Webstorm pour effectuer une requete sur l&#8217;url <a href="https://pokeapi.co/api/v2/pokemon/pikachu" class="bare">https://pokeapi.co/api/v2/pokemon/pikachu</a></p>
+</li>
+<li>
+<p>Analyser la strcture de la réponse</p>
+</li>
+<li>
+<p>En conséquence, écrire une méthode fetch pour récupérer l&#8217;url de l&#8217;image du pokemon choisis et créer un nouvel élément dans le DOM</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/script.js[]</code></pre>
+</div>
+</div>
+<div class="imageblock unresolved text-center">
+<div class="content">
+<img src="images/m03d03_02.png" alt="m03d03 02">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spotify"><a class="anchor" href="#_spotify"></a>Spotify</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_authorisations"><a class="anchor" href="#_authorisations"></a>Authorisations</h3>
+<div class="paragraph">
+<p>Comme expliqué <a href="https://developer.spotify.com/documentation/web-api/tutorials/getting-started">dans la documentation</a>, il est nécessaire d&#8217;avoir un token d&#8217;accès pour pouvoir utiliser l&#8217;api de spotify.</p>
+</div>
+<div class="paragraph">
+<p>En effet, si on tente de récupérer <a href="https://developer.spotify.com/documentation/web-api/reference/get-new-releases">les nouveautés spotify du moment</a>, on se heurte a une erreur.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X GET https://api.spotify.com/v1/browse/new-releases</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>😥</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Du coup plusieurs solutions :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se créer un compte spotify et suivre la documentation pour devenir propriétaire d&#8217;un token d&#8217;accès</p>
+</li>
+<li>
+<p>Espérer que des développeurs moins bons que nous aient fait des erreurs en laissant trainer leur id, sur GitHub, en clair</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La deuxième méthode permet de montrer aux étudiants pourquoi l&#8217;apprentissage de Git, Gihub, .gitignore et les SECRETS est important</p>
+</div>
+<div class="paragraph">
+<p>Et puisqu&#8217;on sait quelle est le format de la requete :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X POST "https://accounts.spotify.com/api/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&amp;client_id=your-client-id&amp;client_secret=your-client-secret"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Une recherche sur GitHub porte toujours ses fruits :</p>
+</div>
+<div class="imageblock unresolved">
+<div class="content">
+<img src="images/m03d03_01.png" alt="m03d03 01">
+</div>
+</div>
+<div class="paragraph">
+<p>On va donc pouvoir utiliser le client_id de l&#8217;utilisateur NickDay04 qui a clairement manqué de vigilance sur ce coup-là.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+C&#8217;est le bon moment pour faire un rappel sur le côté <strong>public</strong> des dépots GitHub et des informations qui s&#8217;y trouvent.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/script.js[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le fetch est très différent du premier puisque c&#8217;est un POST.
+La configuration des headers et le contenu du body est imposé par <a href="https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow">la documentation de spotify</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stocker le token dans le "local storage" pour une utilisation future</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>En effet, HTTP est stateless donc il va falloir renvoyer le token à chaque requête suivante.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recherche_dun_artiste"><a class="anchor" href="#_recherche_dun_artiste"></a>Recherche d&#8217;un artiste</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>En s&#8217;appuyant, encore une fois, sur <a href="https://developer.spotify.com/documentation/web-api/reference/search">la documentation</a>, effectuer une requête HTTP pour rechercher l&#8217;artiste entré par l&#8217;utilisateur dans le champ de saisie</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/script.js[]</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le nouvel élément dans le DOM porte l&#8217;id spotify retourné par l&#8217;API.
+Un évènement sur le clic entraine le déclenchement d&#8217;une autre requête API et la diffusion d&#8217;un son.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_audio"><a class="anchor" href="#_audio"></a>Audio</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">Unresolved include directive in modules/ROOT/pages/module03/m03d03.adoc - include::fichiers/script.js[]</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En toute simplicité, créer un nouvel élément Audio() grâce à l&#8217;id récupéré précédemment et lancer l&#8217;écoute.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

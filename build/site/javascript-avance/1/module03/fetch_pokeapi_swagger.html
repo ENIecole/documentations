@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>fetch Pokeapi et Spotify :: ENI école</title>
+    <meta name="generator" content="Antora 3.1.3">
+    <link rel="stylesheet" href="../../../_/css/site.css">
+    <script>var uiRootPath = '../../../_'</script>
+  </head>
+  <body class="article">
+<header class="header">
+  <nav class="navbar">
+    <div class="navbar-brand">
+      <div class="navbar-item">
+        <img src="https://www.eni-ecole.fr/wp-content/uploads/2022/08/logo_eni.png" alt="logo-eni">
+        <span class="separator">//</span>
+        <a href="index.html">Documentations</a>
+      </div>
+    </div>
+  </nav>
+</header>
+<div class="body">
+<div class="nav-container" data-component="javascript-avance" data-version="1">
+  <aside class="nav">
+    <div class="panels">
+<div class="nav-panel-menu is-active" data-panel="menu">
+  <nav class="nav-menu">
+    <h3 class="title"><a href="../index.html">Javascript avancé</a></h3>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="0">
+<ul class="nav-list">
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/donnees_structure_code_fonctions.html">Données, structure de code et fonctions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/webpack.html">Webpack</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/vite.html">ViteJs</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module01/jest_cypress.html">JEST</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/joo_simple.html">Javascript orienté objet</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctions.html">Functions</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/prototypes.html">Prototypes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/classes_es6.html">Classes ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/fonctionnalites_es6.html">Fonctionnalités ES6</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module02/babel.html">Babel</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="web_curl_webstorm.html">Navigateur, Curl et WebStorm</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="swagger.html">Swagger</a>
+  </li>
+  <li class="nav-item is-current-page" data-depth="2">
+    <a class="nav-link" href="fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="promesse_await_async.html">Promesse, await et async</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/installation_typescript.html">Installation de TypeScript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/variables_enumeres.html">Variables et énumérés</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/classes.html">Classes Typescript</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module04/generiques.html">Les génériques</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/creation_du_projet.html">Angular - création du projet de SuperHeros</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_composant.html">Angular - Super composants</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_liaisons.html">Angular - Liaisons composants-templates</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_directives.html">Angular - Super directives</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_routage.html">Angular - Super routage</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_services.html">Angular - Super service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../module05/super_api.html">Angular - Super API</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">TPs</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 01</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module01/devinette.html">Devinette</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 02</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/quiz.html">Quiz</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module02/enigma.html">Enigma</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 03</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module03/iss.html">ISS</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 04</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module04/vente_aux_encheres.html">Vente aux enchères</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Module 05</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_maquette.html">Pokemon - Maquette</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_attrapez_les_tous.html">Pokemon - Attrapez les tous</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_service.html">Pokemon - Service</a>
+  </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../tps/module05/pokemon_api.html">Pokemon - API</a>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </li>
+</ul>
+  </nav>
+</div>
+<div class="nav-panel-explore" data-panel="explore">
+  <div class="context">
+    <span class="title">Javascript avancé</span>
+    <span class="version">1</span>
+  </div>
+  <ul class="components">
+    <li class="component is-current">
+      <a class="title" href="../index.html">Javascript avancé</a>
+      <ul class="versions">
+        <li class="version is-current is-latest">
+          <a href="../index.html">1</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+    </div>
+  </aside>
+</div>
+<main class="article">
+<div class="toolbar" role="navigation">
+<button class="nav-toggle"></button>
+  <a href="../index.html" class="home-link"></a>
+<nav class="breadcrumbs" aria-label="breadcrumbs">
+  <ul>
+    <li><a href="../index.html">Javascript avancé</a></li>
+    <li>Module 03</li>
+    <li><a href="fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a></li>
+  </ul>
+</nav>
+  <div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module03/fetch_pokeapi_swagger.adoc">Edit this Page</a></div>
+  </div>
+  <div class="content">
+<aside class="toc sidebar" data-title="Contents" data-levels="2">
+  <div class="toc-menu"></div>
+</aside>
+<article class="doc">
+<h1 class="page">fetch Pokeapi et Spotify</h1>
+<div class="sect1">
+<h2 id="_objectifs"><a class="anchor" href="#_objectifs"></a>Objectifs</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>L&#8217;objectif de cette démonstration est l&#8217;utilisation de fetch pour effectuer une requête sur une api.</p>
+</div>
+<div class="paragraph">
+<p>On utilisera l&#8217;api de <a href="https://developer.spotify.com/documentation/web-api">Spotify</a> et de <a href="https://pokeapi.co/">Pokemon</a>.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_mise_en_place"><a class="anchor" href="#_mise_en_place"></a>Mise en place</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Créer un fichier html</p>
+</li>
+<li>
+<p>Créer un fichier script.js</p>
+</li>
+<li>
+<p>Lier le html et le javascript</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Le fichier HTML contient 3 emplacements :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Une div pour afficher l&#8217;image d&#8217;un pokemon</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div id="pikachu"&gt;&lt;/div&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un champ de saisie pour rechercher un artiste dans la librairie Spotify</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;label for="recherche"&gt;Rechercher un artiste Spotify : &lt;/label&gt;&lt;input id="recherche"/&gt;
+&lt;button onclick="recherche()"&gt;Rechercher&lt;/button&gt;</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Une div qui contiendra le resultat de la recherche</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-html hljs" data-lang="html">&lt;div id="artistes"&gt;&lt;/div&gt;</code></pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_pokemons"><a class="anchor" href="#_pokemons"></a>Pokemons</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Utiliser curl ou Webstorm pour effectuer une requete sur l&#8217;url <a href="https://pokeapi.co/api/v2/pokemon/pikachu" class="bare">https://pokeapi.co/api/v2/pokemon/pikachu</a></p>
+</li>
+<li>
+<p>Analyser la strcture de la réponse</p>
+</li>
+<li>
+<p>En conséquence, écrire une méthode fetch pour récupérer l&#8217;url de l&#8217;image du pokemon choisis et créer un nouvel élément dans le DOM</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">fetch('https://pokeapi.co/api/v2/pokemon/pikachu')
+    .then(r =&gt; r.json())
+    .then(reponse =&gt; {
+        // console.log(reponse["sprites"]["other"]["home"]["front_female"]);
+        let image = document.createElement('img');
+        image.src = reponse["sprites"]["other"]["home"]["front_female"];
+        document.getElementById('pikachu').appendChild(image);
+    })</code></pre>
+</div>
+</div>
+<div class="imageblock text-center">
+<div class="content">
+<img src="../_images/module03/pikachu_spotify.png" alt="pikachu spotify">
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_spotify"><a class="anchor" href="#_spotify"></a>Spotify</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_authorisations"><a class="anchor" href="#_authorisations"></a>Authorisations</h3>
+<div class="paragraph">
+<p>Comme expliqué <a href="https://developer.spotify.com/documentation/web-api/tutorials/getting-started">dans la documentation</a>, il est nécessaire d&#8217;avoir un token d&#8217;accès pour pouvoir utiliser l&#8217;api de spotify.</p>
+</div>
+<div class="paragraph">
+<p>En effet, si on tente de récupérer <a href="https://developer.spotify.com/documentation/web-api/reference/get-new-releases">les nouveautés spotify du moment</a>, on se heurte a une erreur.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X GET https://api.spotify.com/v1/browse/new-releases</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>😥</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
+  "error": {
+    "status": 401,
+    "message": "No token provided"
+  }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Du coup plusieurs solutions :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Se créer un compte spotify et suivre la documentation pour devenir propriétaire d&#8217;un token d&#8217;accès</p>
+</li>
+<li>
+<p>Espérer que des développeurs moins bons que nous aient fait des erreurs en laissant trainer leur id, sur GitHub, en clair</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La deuxième méthode permet de montrer aux étudiants pourquoi l&#8217;apprentissage de Git, Gihub, .gitignore et les SECRETS est important</p>
+</div>
+<div class="paragraph">
+<p>Et puisqu&#8217;on sait quelle est le format de la requete :</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X POST "https://accounts.spotify.com/api/token" \
+     -H "Content-Type: application/x-www-form-urlencoded" \
+     -d "grant_type=client_credentials&amp;client_id=your-client-id&amp;client_secret=your-client-secret"</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Une recherche sur GitHub porte toujours ses fruits :</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="../_images/module03/github.png" alt="github">
+</div>
+</div>
+<div class="paragraph">
+<p>On va donc pouvoir utiliser le client_id de l&#8217;utilisateur NickDay04 qui a clairement manqué de vigilance sur ce coup-là.</p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Important"></i>
+</td>
+<td class="content">
+C&#8217;est le bon moment pour faire un rappel sur le côté <strong>public</strong> des dépots GitHub et des informations qui s&#8217;y trouvent.
+</td>
+</tr>
+</table>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">client_id = "91b7ed5b61984131a7d7425d890dbdcf";
+client_secret = "35557b16e54348f2a386df61ece15d06";
+fetch(
+    "https://accounts.spotify.com/api/token",
+    {
+        headers: {
+            'Authorization': 'Basic ' + btoa(client_id + ':' + client_secret),
+            'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        method: "POST",
+        body: new URLSearchParams({
+            grant_type: "client_credentials"
+        })
+    }
+)
+    .then(r =&gt; r.json())
+    .then(reponse =&gt; {
+        // console.log(reponse['access_token']);
+        localStorage.setItem('token', reponse['access_token']);
+    });</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le fetch est très différent du premier puisque c&#8217;est un POST.
+La configuration des headers et le contenu du body est imposé par <a href="https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow">la documentation de spotify</a>.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Stocker le token dans le "local storage" pour une utilisation future</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>En effet, HTTP est stateless donc il va falloir renvoyer le token à chaque requête suivante.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_recherche_dun_artiste"><a class="anchor" href="#_recherche_dun_artiste"></a>Recherche d&#8217;un artiste</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>En s&#8217;appuyant, encore une fois, sur <a href="https://developer.spotify.com/documentation/web-api/reference/search">la documentation</a>, effectuer une requête HTTP pour rechercher l&#8217;artiste entré par l&#8217;utilisateur dans le champ de saisie</p>
+</li>
+</ul>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function recherche() {
+    const artiste = document.getElementById('recherche').value;
+    fetch("https://api.spotify.com/v1/search?query=" + artiste + "&amp;type=artist",
+        {
+            headers: {
+                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
+            }
+        })
+        .then(r =&gt; r.json())
+        .then(reponse =&gt; {
+            // console.log(reponse);
+            document.getElementById('artistes').innerHTML = '';
+            for (const artiste of reponse['artists']['items']) {
+                let div_artiste = document.createElement('div');
+                div_artiste.innerText = artiste['name'];
+                div_artiste.id = artiste['id'];
+                div_artiste.addEventListener('click', son);
+                document.getElementById('artistes').appendChild(div_artiste);
+            }
+        });
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Le nouvel élément dans le DOM porte l&#8217;id spotify retourné par l&#8217;API.
+Un évènement sur le clic entraine le déclenchement d&#8217;une autre requête API et la diffusion d&#8217;un son.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_audio"><a class="anchor" href="#_audio"></a>Audio</h3>
+<div class="listingblock">
+<div class="content">
+<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function son(evt) {
+    // console.log(evt.target.id);
+    fetch("https://api.spotify.com/v1/artists/" + evt.target.id + "/top-tracks?market=FR",
+        {
+            headers: {
+                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
+            }
+        })
+        .then(r =&gt; r.json())
+        .then(reponse =&gt; {
+            // console.log(reponse['tracks'][0]['preview_url']);
+            let audio = new Audio(reponse['tracks'][0]['preview_url']);
+            audio.play().catch(err =&gt; console.log(err));
+        })
+}</code></pre>
+</div>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>En toute simplicité, créer un nouvel élément Audio() grâce à l&#8217;id récupéré précédemment et lancer l&#8217;écoute.</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</article>
+  </div>
+</main>
+</div>
+<footer class="footer">
+  <p>This page was built using the Antora default UI.</p>
+  <p>The source code for this UI is licensed under the terms of the MPL-2.0 license.</p>
+</footer>
+<script id="site-script" src="../../../_/js/site.js" data-ui-root-path="../../../_"></script>
+<script async src="../../../_/js/vendor/highlight.js"></script>
+  </body>
+</html>

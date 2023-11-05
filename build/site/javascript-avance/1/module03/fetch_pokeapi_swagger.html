@@ -6,7 +6,6 @@
     <title>fetch Pokeapi et Spotify :: ENI école</title>
     <meta name="generator" content="Antora 3.1.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
-    <script>var uiRootPath = '../../../_'</script>
   </head>
   <body class="article">
 <header class="header">
@@ -233,8 +232,8 @@
     <li><a href="fetch_pokeapi_swagger.html">fetch Pokeapi et Spotify</a></li>
   </ul>
 </nav>
-  <div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module03/fetch_pokeapi_swagger.adoc">Edit this Page</a></div>
-  </div>
+<div class="edit-this-page"><a href="https://github.com/ENIecole/javascript-avance/edit/main/documentations/modules/ROOT/pages/module03/fetch_pokeapi_swagger.adoc">Edit this Page</a></div>
+</div>
   <div class="content">
 <aside class="toc sidebar" data-title="Contents" data-levels="2">
   <div class="toc-menu"></div>
@@ -341,193 +340,6 @@
 <div class="imageblock text-center">
 <div class="content">
 <img src="../_images/module03/pikachu_spotify.png" alt="pikachu spotify">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_spotify"><a class="anchor" href="#_spotify"></a>Spotify</h2>
-<div class="sectionbody">
-<div class="sect2">
-<h3 id="_autorisations"><a class="anchor" href="#_autorisations"></a>Autorisations</h3>
-<div class="paragraph">
-<p>Comme expliqué <a href="https://developer.spotify.com/documentation/web-api/tutorials/getting-started">dans la documentation</a>, il est nécessaire d&#8217;avoir un token d&#8217;accès pour pouvoir utiliser l&#8217;api de spotify.</p>
-</div>
-<div class="paragraph">
-<p>En effet, si on tente de récupérer <a href="https://developer.spotify.com/documentation/web-api/reference/get-new-releases">les nouveautés spotify du moment</a>, on se heurte a une erreur.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X GET https://api.spotify.com/v1/browse/new-releases</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>😥</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
-  "error": {
-    "status": 401,
-    "message": "No token provided"
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Du coup plusieurs solutions :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Se créer un compte spotify et suivre la documentation pour devenir propriétaire d&#8217;un token d&#8217;accès</p>
-</li>
-<li>
-<p>Espérer que des développeurs moins bons que nous aient fait des erreurs en laissant traîner leur id, sur GitHub, en clair</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>La deuxième méthode permet de montrer aux étudiants pourquoi l&#8217;apprentissage de Git, Gihub, .gitignore et les SECRETS est important</p>
-</div>
-<div class="paragraph">
-<p>Et puisqu&#8217;on sait quel est le format de la requête :</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-console hljs" data-lang="console">curl -X POST "https://accounts.spotify.com/api/token" \
-     -H "Content-Type: application/x-www-form-urlencoded" \
-     -d "grant_type=client_credentials&amp;client_id=your-client-id&amp;client_secret=your-client-secret"</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Une recherche sur GitHub porte toujours ses fruits :</p>
-</div>
-<div class="imageblock">
-<div class="content">
-<img src="../_images/module03/github.png" alt="github">
-</div>
-</div>
-<div class="paragraph">
-<p>On va donc pouvoir utiliser le client_id de l&#8217;utilisateur NickDay04 qui a clairement manqué de vigilance sur ce coup-là.</p>
-</div>
-<div class="admonitionblock important">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-important" title="Important"></i>
-</td>
-<td class="content">
-C&#8217;est le bon moment pour faire un rappel sur le côté <strong>public</strong> des dépots GitHub et des informations qui s&#8217;y trouvent.
-</td>
-</tr>
-</table>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">client_id = "91b7ed5b61984131a7d7425d890dbdcf";
-client_secret = "35557b16e54348f2a386df61ece15d06";
-fetch(
-    "https://accounts.spotify.com/api/token",
-    {
-        headers: {
-            'Authorization': 'Basic ' + btoa(client_id + ':' + client_secret),
-            'Content-Type': 'application/x-www-form-urlencoded'
-        },
-        method: "POST",
-        body: new URLSearchParams({
-            grant_type: "client_credentials"
-        })
-    }
-)
-    .then(r =&gt; r.json())
-    .then(reponse =&gt; {
-        // console.log(reponse['access_token']);
-        localStorage.setItem('token', reponse['access_token']);
-    });</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Le fetch est très différent du premier puisque c&#8217;est un POST.
-La configuration des headers et le contenu du body est imposé par <a href="https://developer.spotify.com/documentation/web-api/tutorials/client-credentials-flow">la documentation de spotify</a>.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Stocker le token dans le "local storage" pour une utilisation future</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>En effet, HTTP est stateless donc il va falloir renvoyer le token à chaque requête suivante.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_recherche_dun_artiste"><a class="anchor" href="#_recherche_dun_artiste"></a>Recherche d&#8217;un artiste</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>En s&#8217;appuyant, encore une fois, sur <a href="https://developer.spotify.com/documentation/web-api/reference/search">la documentation</a>, effectuer une requête HTTP pour rechercher l&#8217;artiste entré par l&#8217;utilisateur dans le champ de saisie</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function recherche() {
-    const artiste = document.getElementById('recherche').value;
-    fetch("https://api.spotify.com/v1/search?query=" + artiste + "&amp;type=artist",
-        {
-            headers: {
-                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
-            }
-        })
-        .then(r =&gt; r.json())
-        .then(reponse =&gt; {
-            // console.log(reponse);
-            document.getElementById('artistes').innerHTML = '';
-            for (const artiste of reponse['artists']['items']) {
-                let div_artiste = document.createElement('div');
-                div_artiste.innerText = artiste['name'];
-                div_artiste.id = artiste['id'];
-                div_artiste.addEventListener('click', son);
-                document.getElementById('artistes').appendChild(div_artiste);
-            }
-        });
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Le nouvel élément dans le DOM porte l&#8217;id spotify retourné par l&#8217;API.
-Un évènement sur le clic entraîne le déclenchement d&#8217;une autre requête API et la diffusion d&#8217;un son.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_audio"><a class="anchor" href="#_audio"></a>Audio</h3>
-<div class="listingblock">
-<div class="content">
-<pre class="highlightjs highlight"><code class="language-javascript hljs" data-lang="javascript">function son(evt) {
-    // console.log(evt.target.id);
-    fetch("https://api.spotify.com/v1/artists/" + evt.target.id + "/top-tracks?market=FR",
-        {
-            headers: {
-                'Authorization': 'Bearer ' + window.localStorage.getItem('token')
-            }
-        })
-        .then(r =&gt; r.json())
-        .then(reponse =&gt; {
-            // console.log(reponse['tracks'][0]['preview_url']);
-            let audio = new Audio(reponse['tracks'][0]['preview_url']);
-            audio.play().catch(err =&gt; console.log(err));
-        })
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>En toute simplicité, créer un nouvel élément Audio() grâce à l&#8217;id récupéré précédemment et lancer l&#8217;écoute.</p>
-</li>
-</ul>
 </div>
 </div>
 </div>
